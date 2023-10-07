@@ -16,4 +16,5 @@ urlpatterns = [
     path('edit/',views.edit,name='edit'),
     path('feed/',post_view.feed,name='feed'),
     path('create/',post_view.post_create,name='create'),
+    path('profile/',views.profile,name='profile'),
 ]

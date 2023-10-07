@@ -55,3 +55,8 @@ def edit(request):
         user_form=UserEditForm(instance=request.user)
         profile_form=ProfileEditForm(instance=request.user.profile)
     return render(request,'users/edit.html',{'user_form':user_form,'profile_form':profile_form})
+
+def profile(request):
+    user=request.user
+    user_profile=Profile.objects.filter(user=user).first()
+    return render(request,'users/profile.html',{'user_profile':user_profile})

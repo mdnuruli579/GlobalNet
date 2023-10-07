@@ -22,7 +22,7 @@
                      <a class="py-4 px-2 text-gray-500 font-semibold " href="{% url 'feed' %}">Home</a>
                      <a class="py-4 px-2 text-gray-500 font-semibold " href="{% url 'create' %}">Create Post</a>
                      <a class="py-4 px-2 text-gray-500 font-semibold " href="{% url 'logout' %}">Logout</a>
-                     <a class="py-4 px-2 text-gray-500 font-semibold" href="">Profile</a>
+                     <a class="py-4 px-2 text-gray-500 font-semibold" href="{% url 'profile' %}">Profile</a>
                       {% else %}
                     <a class="py-4 px-2 text-gray-500 font-semibold " href="{% url 'register' %}">New User</a>
                     <a class="py-4 px-2 text-gray-500 font-semibold " href="{% url 'login' %}">Login</a>
